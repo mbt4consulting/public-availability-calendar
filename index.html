@@ -11,24 +11,30 @@
       width: 100%;
       height: 100%;
       margin: 0;
+    }
+
+    body {
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr);
+      overflow: hidden;
       background: #fff;
+      color: #111;
     }
 
     h1 {
-      height: 64px;
       margin: 0;
-      padding: 0 20px;
+      padding: 6px 16px;
+      border-bottom: 1px solid #e5e7eb;
       box-sizing: border-box;
-      display: flex;
-      align-items: center;
-      font: 600 24px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: #111;
+      text-align: center;
+      font: 600 20px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
     iframe {
       display: block;
       width: 100% !important;
-      height: calc(100vh - 64px) !important;
+      height: 100% !important;
+      min-height: 0;
       border: 0 !important;
     }
   </style>
