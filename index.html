@@ -23,8 +23,10 @@
       position: absolute;
       z-index: 2;
       top: 0;
-      left: 7vw;
-      width: calc(100% - 7vw);
+      left: calc(50% + 68px);
+      transform: translateX(-50%);
+      width: max-content;
+      max-width: calc(100% - 32px);
       margin: 0;
       padding: 6px 16px;
       box-sizing: border-box;
@@ -45,8 +47,7 @@
 
     @media (max-width: 700px) {
       h1 {
-        left: 0;
-        width: 100%;
+        left: 50%;
         font-size: 18px;
       }
     }
@@ -56,7 +57,7 @@
   <h1>Manny's Availability</h1>
 <iframe id="open-web-calendar" 
     style="background:url('https://raw.githubusercontent.com/niccokunzmann/open-web-calendar/master/static/img/loaders/circular-loader.gif') center center no-repeat;"
-    src="https://open-web-calendar.hosted.quelltext.eu/calendar.html?ending_hour=22&amp;starting_hour=6"
+    src="https://open-web-calendar.hosted.quelltext.eu/calendar.html?date=2026-09-01&amp;ending_hour=22&amp;skin=terrace&amp;starting_hour=6&amp;title=Manny&#039;s%20Availability&amp;url=fernet%3A%2F%2FgAAAAABqoc76JAKf7_6c81q1kk6gjT2H4V6buLL1jJyJ__ALSmBj5VUXl5KwuuP7MtcP2dLNOoXvZJaUge8XeJILI_rJjwgRuxSBLEVfJoG4rKb3CyShCudHY3b-CSx4q0QWa1vA8NaFu-lB2haf-SbhC5fW74Kk3XuMHyBX9194aNMOyVNcAB7WzrYS4uyTCNEKTjweGlmwD63J5QcMEhAEXJB9_baVV1dG0i52WCsWtx0O7G7poIloevlgNourqlUXMdeWvOaZ1EyAKB16qAQOUuHXz3JpHRxEnappGeVSH0pHbMXiI94qPvFTPv-AixO_ljEO_4G_sI1gUbC_4qEIttsWkS9bDA%3D%3D"
     sandbox="allow-scripts allow-same-origin allow-top-navigation allow-downloads"
     allowTransparency="true" scrolling="no" 
     frameborder="0" height="597px" width="100%"></iframe>
