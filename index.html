@@ -23,8 +23,8 @@
       position: absolute;
       z-index: 2;
       top: 0;
-      left: 0;
-      width: 100%;
+      left: 7vw;
+      width: calc(100% - 7vw);
       margin: 0;
       padding: 6px 16px;
       box-sizing: border-box;
@@ -42,13 +42,21 @@
       height: 100% !important;
       border: 0 !important;
     }
+
+    @media (max-width: 700px) {
+      h1 {
+        left: 0;
+        width: 100%;
+        font-size: 18px;
+      }
+    }
   </style>
 </head>
 <body>
   <h1>Manny's Availability</h1>
 <iframe id="open-web-calendar" 
     style="background:url('https://raw.githubusercontent.com/niccokunzmann/open-web-calendar/master/static/img/loaders/circular-loader.gif') center center no-repeat;"
-    src="https://open-web-calendar.hosted.quelltext.eu/calendar.html?date=2026-09-07&amp;ending_hour=22&amp;menu_shows_calendar_names=false&amp;menu_shows_description=false&amp;menu_shows_title=false&amp;skin=terrace&amp;starting_hour=6&amp;tab=week&amp;title=Availibility&amp;url=fernet%3A%2F%2FgAAAAABqoaQdH1Jo2P1cXRULT05D7y2EUAKouZsSES_cHdk0QzRiozKA2RJcN5S_oDoumRLZaj6bVxS8SNIuslKJYMJX-RqbeEsHYvbCJjAQlb5jkNtQxQltK-doAU7-zrgUIx8St1A6GLSpTcfDIBQnHFUHgcjzkdKLHzuRVCqlIxLzhtkgWQiIZFrrF-nz50vzwi_PEK3a5oHnKNLpa-Xk-AZF9RTkMSwxx1Z8Ao3Rvqw6i673EtIvz-6fbujr1Xuhu5rupXRRpxJpygasq3mEz1E4yuzyrCLmqYBuCqVDXTgZ0FEurzReGfXwWv7NOIBIyDwbA3QgZjJZD19QHKzxiOC103AV5Q%3D%3D"
+    src="https://open-web-calendar.hosted.quelltext.eu/calendar.html?ending_hour=22&amp;starting_hour=6"
     sandbox="allow-scripts allow-same-origin allow-top-navigation allow-downloads"
     allowTransparency="true" scrolling="no" 
     frameborder="0" height="597px" width="100%"></iframe>
